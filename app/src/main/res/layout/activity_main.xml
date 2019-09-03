@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/lbDolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90px"
+        android:layout_marginLeft="50px"
+        android:text="Dólar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:id="@+id/dolar"
+        android:layout_width="180dp"
+        android:layout_marginLeft="50px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbDolar"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/lbEuros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350px"
+        android:layout_marginLeft="50px"
+        android:text="Euros"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbEuros"
+        android:layout_marginLeft="50px"
+
+        />
+
+    <RadioButton
+        android:id="@+id/rbEuroADolar"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="600px"
+        android:checked="true"
+        android:text="Euros a Dólares" />
+
+    <RadioButton
+        android:id="@+id/rbDolarAEuro"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:text="Dólares a Euros"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="700px"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:text="Cambio ah..."
+        android:layout_marginTop="850px"
+        android:layout_marginLeft="50px"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/tbResultado"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="950px"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:text="Convertir"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="1050px"/>
+
+</RelativeLayout>
